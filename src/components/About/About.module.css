@@ -1,0 +1,66 @@
+.section {
+  background-color: black;
+  min-height: 500vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - 100px);
+  background-image: url("/public/backgrounds/aboutMe.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.back {
+  position: fixed;
+  left: 8%;
+  top: 5%;
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+}
+
+.titleContainer {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.title {
+  display: inline-block;
+  justify-content: center;
+}
+
+.text {
+  font-size: 3rem;
+  letter-spacing: 15px;
+  font-family: var(--lexend);
+  text-transform: uppercase;
+  border-right: 5px solid;
+  width: 100%;
+  color: var(--primary-color);
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 3.5s steps(27), cursor 0.4s step-end infinite alternate;
+}
+
+
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}

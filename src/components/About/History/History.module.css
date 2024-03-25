@@ -1,0 +1,66 @@
+.history {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.photo {
+  position: relative;
+  width: 400px;
+  height: 300px;
+}
+
+.photo img {
+  border: 15px solid #fff;
+  border-radius: 1px;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.career {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(4deg);
+}
+.study {
+  position: absolute;
+  top: 80%;
+  left: 40%;
+  transform: translate(-50%, -50%) rotate(-15deg);
+}
+.life {
+  position: absolute;
+  top: 105%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(8deg);
+}
+
+.career div,
+.study div,
+.life div {
+  position: absolute;
+  border: 15px solid #fff;
+  border-radius: 1px;
+  object-fit: cover;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  font-family: var(--dm-sans);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  transition: all 0.4s ease-in-out;
+}
+
+.career div:hover,
+.study div:hover,
+.life div:hover {
+  opacity: 1;
+}

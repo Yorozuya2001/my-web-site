@@ -1,0 +1,55 @@
+.section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+
+.card {
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  width: 80%;
+  height: 45vh;
+  background-color: var(--secondary-color);
+  border-radius: 12px;
+  align-self: self-end;
+  transform: skewY(4deg);
+  margin-right: 32px;
+}
+
+.image {
+  width: 30%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  row-gap: 16px;
+  width: 70%;
+  height: 100%;
+  font-size: 1.3rem;
+  letter-spacing: 3px;
+  font-family: var(--lexend);
+  text-transform: uppercase;
+}
+
+.title {
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+  letter-spacing: 3px;
+  font-family: var(--lexend);
+  text-transform: uppercase;
+}
+
+.udemy,
+.freeCode,
+.unlam {
+  width: 60px;
+  height: auto;
+}
